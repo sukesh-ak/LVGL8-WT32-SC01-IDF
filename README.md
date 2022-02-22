@@ -1,4 +1,4 @@
-# Graphics & Touch on WT32-SC01
+# Graphics & Touch on WT32-SC01 ( ESP-IDF )
 
 ![device](device.png)
 
@@ -6,13 +6,15 @@
 - Board : WT32-SC01 from Wireless Tag (Seeed Studio also carries the same)
 - Graphics & Touch Driver : [LovyanGFX](https://github.com/lovyan03/LovyanGFX)
 - UI/Widgets : LVGL8.x (work in progress soon)
-- Framework : ESP-IDF
+- Framework : ESP-IDF ([Arduino sample here](https://github.com/sukesh-ak/LVGL8-WT32-SC01-Arduino))  
+    (*Don't forget to run `idf.py menuconfig` before building the sample*)
 
 ## Demo code output
 ![device](SampleUI.jpg)
 
 ## WT32-SC01 Specs  
 #### Pros:  
+- ESP32 WROVER-B
 - 3.5" 480x320 ST7796S TFT Display
 - Capacitive touchscreen FT6336U
 - Default 4MB Flash & 8MB PSRAM
@@ -39,14 +41,11 @@
 - Touch	(FT6336U)
     - TOUCH_SDA=18
     - TOUCH_SCL=19
-    - TOUCH_IRQ=-1   ; not connected
-    - TOUCH_RST=-1   ; not used, connected to 3.3V
-    - I2C_TOUCH_FREQUENCY=400000
     - I2C_TOUCH_ADDRESS=0x38
 
 ## Touch and Draw sample (without LVGL)
 Replace the content of main.cpp with the following to test quickly  
-For 'Ardiuno IDE', install LovyanGFX library then copy & paste the below code into your .ino file and flash!
+
 ``` C++
 
 /*
@@ -64,8 +63,6 @@ For 'Ardiuno IDE', install LovyanGFX library then copy & paste the below code in
 #include <LGFX_AUTODETECT.hpp>
 
 static LGFX lcd;            // declare display variable
-
-
 
 extern "C"
 {
