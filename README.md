@@ -5,7 +5,7 @@
  
 - Board : WT32-SC01 from Wireless Tag (Seeed Studio also carries the same)
 - Graphics & Touch Driver : [LovyanGFX](https://github.com/lovyan03/LovyanGFX)
-- UI/Widgets : LVGL8.x (work in progress soon)
+- UI/Widgets : [LVGL8.x](https://github.com/lvgl/lvgl)
 - Framework : ESP-IDF ([Arduino sample here](https://github.com/sukesh-ak/LVGL8-WT32-SC01-Arduino))  
     (*Don't forget to run `idf.py menuconfig` before building the sample*)
 
