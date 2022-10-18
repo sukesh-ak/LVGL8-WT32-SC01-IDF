@@ -1,11 +1,8 @@
 # Graphics & Touch on WT32-SC01 ( ESP-IDF )
 
-## Check the updated sample (link below)
-- Supports multiple display sizes and ESP32/ESP32-S3 controllers
-- Provides UI with header/footer setup and content area etc. 
-- Supports SD Card using shared SPI bus
-- Add or change display/board support using a single include file.  
-https://github.com/sukesh-ak/LVGL8x-SDSPI-Template
+## Check the updated version with lots of features, including support for the new version WT32-SC01 Plus
+https://github.com/sukesh-ak/WT32-SC01-PLUS-LVGL-IDF
+
 
 ![device](device.png)
 
