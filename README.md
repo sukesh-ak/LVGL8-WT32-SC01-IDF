@@ -1,7 +1,7 @@
-# Graphics & Touch on WT32-SC01 ( ESP-IDF )
+# Project moved => [ESP32-TUX](https://github.com/sukesh-ak/ESP32-TUX)
 
 ## Check the updated version with lots of features, including support for the new version WT32-SC01 Plus
-https://github.com/sukesh-ak/WT32-SC01-PLUS-LVGL-IDF
+https://github.com/sukesh-ak/ESP32-TUX
 
 
 ![device](device.png)
